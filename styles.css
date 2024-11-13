@@ -1,0 +1,212 @@
+/* Reset e configuração básica */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Container geral */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: #4C5B8F;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+header nav ul li a:hover {
+    color: #FFDD57;
+}
+
+/* Estilo das seções principais */
+main {
+    padding: 20px;
+}
+
+.tarefas {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tarefas h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #4C5B8F;
+}
+
+.tarefas p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+/* Calendário */
+#calendar {
+    margin-top: 20px;
+    max-width: 100%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Efeitos de hover e seleção do calendário */
+.fc-day:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.selected-date {
+    background-color: #4C5B8F !important;
+    color: white !important;
+}
+
+/* Estilo do formulário de tarefas */
+#task-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#task-form h3 {
+    font-size: 1.5rem;
+    color: #4C5B8F;
+    margin-bottom: 15px;
+}
+
+#task-form label {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    color: #333;
+}
+
+#task-date, #task-time, #task-description, #task-urgency {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #555;
+}
+
+#task-description {
+    resize: vertical;
+    height: 100px;
+}
+
+#add-task {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #4C5B8F;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+#add-task:hover {
+    background-color: #3b4a72;
+}
+
+/* Lista de tarefas */
+#task-list {
+    margin-top: 30px;
+}
+
+.task-item {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.task-item strong {
+    color: #4C5B8F;
+}
+
+.task-item .urgency {
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/* Cores para os diferentes níveis de urgência */
+.urgency-baixa {
+    background-color: #a5d6a7;
+    color: #2e7d32;
+}
+
+.urgency-media {
+    background-color: #fff59d;
+    color: #fbc02d;
+}
+
+.urgency-alta {
+    background-color: #ef9a9a;
+    color: #c62828;
+}
+
+/* Estilo do rodapé */
+footer {
+    background-color: #4C5B8F;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 0;
+}

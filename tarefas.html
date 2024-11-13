@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/@fullcalendar/core@3.10.2/main.min.css" rel="stylesheet" />
+
+    <style>
+        #calendar {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Planejador de Tarefas</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Página Inicial</a></li>
+                    <li><a href="cursos.html">Cursos Gratuitos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="tarefas">
+            <div class="container">
+                <h2>Planeje suas Tarefas no Calendário</h2>
+                <p>Selecione uma data no calendário e adicione sua tarefa para esse dia.</p>
+
+                <!-- Calendário -->
+                <div id="calendar"></div>
+
+                <!-- Formulário para adicionar tarefas -->
+                <div id="task-form" style="display:none;">
+                    <h3>Adicionar Tarefa</h3>
+                    <label for="task-date">Data:</label>
+                    <input type="date" id="task-date" required>
+                
+                    <label for="task-time">Hora:</label>
+                    <input type="time" id="task-time" required>
+                
+                    <label for="task-description">Descrição:</label>
+                    <textarea id="task-description" rows="4" placeholder="Descreva sua tarefa..." required></textarea>
+                
+                    <label for="task-urgency">Urgência:</label>
+                    <select id="task-urgency" required>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+                
+                    <button id="add-task">Adicionar Tarefa</button>
+                </div>
+                
+                <!-- Lista de tarefas -->
+                <div id="task-list">
+                    <h3>Tarefas Registradas</h3>
+                    <!-- As tarefas serão exibidas aqui -->
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Planejador de Tarefas. Todos os direitos reservados.</p>
+        </div>
+        
+    </footer>
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@3.10.2/main.min.js"></script>
+    <script src=" https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js "></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
