@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planit - Cursos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>PlanIt</h1>
+            <div class="header-content">
+                <img src="logo.png" alt="Logo do Site" class="logo">
+                <h1>PlanIt</h1>
+            </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="tarefas.html">Planejador de Tarefas</a></li>
+                    <li><a href="tarefas.html">Planejador</a></li>
+                    <li><a href="cursos.html">Cursos Gratuitos</a></li>
                 </ul>
             </nav>
         </div>
@@ -22,19 +29,29 @@
     <main>
         <section class="cursos">
             <div class="container">
-                <h2>Acesse Cursos Gratuitos</h2>
-                <ul>
-                    <li><a href="https://www.ev.org.br/" target="_blank">Fundação Bradesco</a></li>
-                    <li><a href="https://www.alura.com.br/" target="_blank">Alura</a></li>
-                    <li><a href="https://www.sp.senai.br/cursos" target="_blank">Senai</a></li>
-                </ul>
+                <h2>Acesse Cursos Gratuitos de plataformas parceiras do GAMT para o seu desenvolvimento!</h2>
+                <br><br>
+                <div class="course-cards">
+                    <div class="course-card">
+                        <img src="bradesco.png" alt="Fundação Bradesco" class="course-image">
+                        <a href="https://www.ev.org.br/cursos" target="_blank">Fundação Bradesco</a>
+                    </div>
+                    <div class="course-card">
+                        <img src="alura.png" alt="Alura" class="course-image">
+                        <a href="https://www.alura.com.br/" target="_blank">Alura</a>
+                    </div>
+                    <div class="course-card">
+                        <img src="senai.jpg" alt="Senai" class="course-image">
+                        <a href="https://www.sp.senai.br/cursos" target="_blank">Senai</a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Planejador de Tarefas. Todos os direitos reservados.</p>
+            <p>&copy; PlanIt Gamt. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
