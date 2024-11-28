@@ -1,4 +1,4 @@
-/* Reset e configuração básica */
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Roboto:wght@300;400;500&display=swap');
 .rubik-mono-one-regular {
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
@@ -12,23 +12,25 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f1f1f1;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    margin: 0;
     color: #333;
 }
 
 /* Container geral */
 .container {
-    width: 90%;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Estilo do cabeçalho */
 header {
     background-color: #4C5B8F;
     color: #fff;
-    padding: 2px 0;
+    padding: 20px 0;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -45,7 +47,25 @@ header {
 .header-content h1{
     font-family: "Rubik Mono One", monospace;
     font-weight: 400;
+    font-size: 3rem;    
     font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
 }
 
 .logo {
@@ -89,29 +109,45 @@ header nav ul li a:hover {
 
 /* Estilo das seções principais */
 main {
-    padding: 20px;
+    padding: 50px 0;
+}
+
+.intro {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .intro h2 {
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     color: #4C5B8F;
 }
 
 .intro h1 {
     font-size: 1.4rem;
     margin-bottom: 15px;
-    color: #1a254d;
+    color: #4C5B8F;
 }
 
 .intro p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    color: #1a254d;
+}
+
+.cursos {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
 }
 
 .cursos h2{
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: #4C5B8F;
     text-align: center;
 }
@@ -333,3 +369,15 @@ button:active {
     transform: scale(0.98); /* Efeito de "pressionado" ao clicar */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+    
