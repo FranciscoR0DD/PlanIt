@@ -59,7 +59,6 @@ nav ul {
 nav ul li a {
     color: #fff;
     font-size: 1rem;
-    padding: 5px 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
